@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='bookingdetails.css')}}">
+</head>
+<body>
+    <div class="bookingdetailsform">
+        <form action='/bookdetail' method="POST">
+            <h1>Booking Details</h1><br>
+            <label for="place_from">From</label><br>
+            <input type="text" id="place_from" name="place_from" required><br><br>
+            <label for="place_to">To</label><br>
+            <input type="text" id="place_to" name="place_to" required><br><br>
+            <label for="travel_date">Date</label><br>
+            <input type="date" name="travel_date" id="travel_date"><br><br>
+            <label for="NoOfSeats">No Of Seats</label><br>
+            <input type="text" name="NoOfSeats" id="NoOfSeats" required><br><br>
+            <a href="confirmed.html" target="_self"><button type="submit" value="Book" onclick="myFunction2()">Book</button></a>
+        </form>
+    </div>
+    <script>
+        function myFunction2(){
+            alert("Your Ticket has been Booked!")
+        }
+    </script>
+</body>
+</html>

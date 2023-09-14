@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+</head>
+<body>
+    <div class="loginform">
+        <form action='/' method="POST">
+            <h1>Login or SignUp</h1><br>
+            <label for="mobilenoOremail">MobileNo/Email</label><br>
+            <input type="email" id="mobilenoOremail" name="mobilenoOremail" required><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <a href="menu.html" target="_self"><button type="submit" value="submit">Login/SignUp</button></a>
+        </form>
+    </div>
+    <!--<script>
+        function myFunction(){
+            alert("You have successfully created an account!")
+        }
+    </script>-->
+</body>

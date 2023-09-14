@@ -1,0 +1,42 @@
+body{
+
+    background-image: url('Background.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bookingdetailsform{
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 350px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    backdrop-filter: blur(8px);
+}
+
+.bookingdetailsform h1{
+    text-align: center;
+}
+
+.bookingdetailsform label{
+    font-size: 20px; 
+    font-family: monospace;
+}
+
+.bookingdetailsform input{
+    width: 300px; 
+    border-radius: 10px; 
+    height: 20px;
+}
+
+.bookingdetailsform button{
+    background-color: rgb(0, 123, 255); 
+    color: white; 
+    text-align: center; 
+    width: 300px ; 
+    height: 30px;
+    border-radius: 10px;
+}

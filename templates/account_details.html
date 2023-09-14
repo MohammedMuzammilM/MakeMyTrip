@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='accountdetails.css')}}">
+</head>
+<body>
+    <div class="accountdetailsform">
+        <form action='/accdetail' method="POST">
+            <h1>Account Details</h1><br>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            <label for="martialStatus">Martial Status</label><br>
+            <input type="text" id="martialStatus" name="martialStatus"><br><br>
+            <label for="mobileno">PhoneNo</label>
+            <input type="tel" name="mobileno" id="mobileno"><br><br>
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" cols="30" rows="3"></textarea><br><br>
+            <label for="city">City</label><br>
+            <input type="text" name="city" id="city"><br><br>
+            <label for="pincode">Pincode</label>
+            <input type="text" name="pincode" id="pincode"><br><br>
+            <button type="submit" value="Save" onclick="myFunction2()">Save</button>
+            <a href="menu.html" target="_self"><button type="submit">Back</button></a>
+        </form>
+    </div>
+    <script>
+        function myFunction2(){
+            alert("Account details has been added!")
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+body{
+
+    background-image: url('Background.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the header and navigation */
+header {
+    background: transparent;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 140, 255);
+    text-shadow: skyblue 2px 2px;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+    font-style: oblique;
+    color: greenyellow;
+    text-shadow: lightgreen 2px 1px;
+}
+
+.travelby{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    margin-right: 75px;
+}
+
+.travelby a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+.travelby a:hover{
+    color: blueviolet;
+}
+
+a img{
+    width: 40px;
+    height: 40px;
+}
+
+#lo{
+    color: red;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+#lo:hover{
+    color: blue;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.user-profile a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(47, 255, 0);
+    font-size: 20px;
+}
+
+.user-profile a:hover{
+    color: blue;
+}

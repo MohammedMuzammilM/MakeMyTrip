@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='menustyle.css')}}">
+    <title>MakeMyTrip Menu</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{url_for('static', filename='mmtlogo.png')}}" alt="MakeMyTrip Logo">
+            </div>
+            <h1>Welcome To Our Beautiful Travelling Site</h1>
+            <div class="user-profile">
+                <a href="{{url_for('acc_details')}}">Account Details</a>
+            </div>
+        </nav>
+    </header>
+    <h2>Travel By</h2><br><br>
+    <div class="travelby">
+        <a href="{{url_for('book_details')}}" style="margin-left: 40px;"><img src="{{url_for('static', filename='flight.png')}}" alt="flight">Flight</a>
+        <a href="{{url_for('book_details')}}" style="margin-left: 70px;"><img src="{{url_for('static', filename='bus.png')}}" alt="bus">Bus</a>
+        <a href="{{url_for('book_details')}}" style="margin-left: 70px;"><img src="{{url_for('static', filename='train.png')}}" alt="train">Train</a><br><br>
+    </div>
+    <a href="{{url_for('registration')}}" id="lo">Logout</a>
+
+</body>
+</html>
